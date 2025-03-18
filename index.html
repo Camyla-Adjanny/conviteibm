@@ -203,6 +203,71 @@ body {
     padding: 20px 0;
     margin-top: 40px;
 }
+        /* Responsividade para telas menores */
+@media (max-width: 768px) {
+    /* Ajustar o cabeçalho para telas pequenas */
+    .header {
+        display: flex;
+        flex-wrap: wrap; /* Permitir que os elementos quebrem linha */
+        justify-content: center; /* Centraliza os elementos no celular */
+        text-align: center; /* Centraliza o título */
+        padding: 10px;
+    }
+
+    .logo-alicerce, .logo-ibm {
+        position: static; /* Remove o posicionamento absoluto para evitar sobreposições */
+        margin: 10px auto; /* Adiciona espaço e centraliza as imagens */
+        max-width: 80px; /* Reduz o tamanho das logos em telas pequenas */
+        height: auto;
+    }
+
+    .header h1 {
+        font-size: 1.5rem; /* Reduz o tamanho do título */
+        margin: 10px 0; /* Adiciona espaçamento para uma leitura mais clara */
+    }
+
+    /* Ajustar as seções de introdução e detalhes */
+    .intro, .detalhes, .projetos {
+        padding: 20px 10px; /* Reduz o espaçamento interno */
+    }
+
+    /* Ajustar os cartões das seções */
+    .info-card, .card {
+        width: 100%; /* Faz os cartões ocuparem 100% da largura em telas pequenas */
+        margin-bottom: 15px; /* Adiciona espaço entre os cartões */
+    }
+
+    .info-evento, .cards {
+        flex-direction: column; /* Empilha os cartões em uma única coluna */
+        align-items: center; /* Centraliza os cartões */
+    }
+
+    .botao {
+        font-size: 0.9rem; /* Reduz o tamanho do botão */
+        padding: 8px 15px; /* Ajusta o tamanho do botão */
+    }
+
+    .evento-info {
+        font-size: 1rem; /* Reduz o tamanho do texto de informações do evento */
+    }
+}
+
+/* Responsividade para telas ainda menores (máximo de 480px) */
+@media (max-width: 480px) {
+    .logo-alicerce, .logo-ibm {
+        max-width: 60px; /* Reduz ainda mais as logos */
+    }
+
+    .header h1 {
+        font-size: 1.3rem; /* Ajusta o título para se encaixar melhor */
+    }
+
+    .botao {
+        padding: 6px 12px; /* Compacta o botão */
+        font-size: 0.8rem; /* Diminui o texto do botão */
+    }
+}
+
     </style>
 </head>
 <body>
